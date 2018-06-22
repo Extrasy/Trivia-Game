@@ -10,7 +10,7 @@ window.onload = function() {
 
   var timer = {
       //time in seconds
-    time: 3,
+    time: 30,
     
   start: function() {
     if (!timerRunning) {
@@ -104,7 +104,7 @@ window.onload = function() {
           // color the answers red
           answerContainers[questionNumber].style.color = "red";
         }
-      });
+      })
   
       resultsContainer.innerHTML = `You scored: ${numCorrect} out of ${myQuestions.length}`;
     }
@@ -123,21 +123,21 @@ window.onload = function() {
         correctAnswer: "c"
       },
       {
-        question: "What is the best site ever created?",
+        question: "What is this?",
         answers: {
-          a: "SitePoint",
-          b: "Simple Steps Code",
-          c: "Trick question; they're both the best"
+          a: "a thing",
+          b: "you mean this??",
+          c: "In most cases, the value of this is determined by how a function is called. It can't be set by assignment during execution, and it may be different each time the function is called. "
         },
         correctAnswer: "c"
       },
       {
-        question: "Where is Waldo really?",
+        question: "What is the FIFA World Cup?",
         answers: {
-          a: "Antarctica",
-          b: "Exploring the Pacific Ocean",
-          c: "Sitting in a tree",
-          d: "Minding his own business, so stop asking"
+          a: "The Fire Intensive Formulating Accord",
+          b: "A cup shaped like a world",
+          c: "You mean soccer?",
+          d: "The FIFA World Cup, often simply called the World Cup, is an international association football competition contested by the senior men's national teams of the members of the Fédération Internationale de Football Association (FIFA), the sport's global governing body. "
         },
         correctAnswer: "d"
       }
