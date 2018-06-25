@@ -10,12 +10,13 @@ window.onload = function() {
 
   var timer = {
       //time in seconds
-    time: 30,
+    time: 60,
     
   start: function() {
     if (!timerRunning) {
       intervalId = setInterval(timer.count, 1000);
       timerRunning = true;
+      timer.time = 60;
     }
   },
   
@@ -116,17 +117,17 @@ window.onload = function() {
       {
         question: "Who is the strongest?",
         answers: {
-          a: "Superman",
-          b: "The Terminator",
-          c: "Waluigi, obviously"
+          a: "Superman ",
+          b: "The Terminator ",
+          c: "Waluigi, obviously "
         },
         correctAnswer: "c"
       },
       {
         question: "What is this?",
         answers: {
-          a: "a thing",
-          b: "you mean this??",
+          a: "a thing ",
+          b: "you mean this?? ",
           c: "In most cases, the value of this is determined by how a function is called. It can't be set by assignment during execution, and it may be different each time the function is called. "
         },
         correctAnswer: "c"
@@ -134,12 +135,31 @@ window.onload = function() {
       {
         question: "What is the FIFA World Cup?",
         answers: {
-          a: "The Fire Intensive Formulating Accord",
-          b: "A cup shaped like a world",
-          c: "You mean soccer?",
+          a: "The Fire Intensive Formulating Accord ",
+          b: "A cup shaped like a world ",
+          c: "You mean soccer? ",
           d: "The FIFA World Cup, often simply called the World Cup, is an international association football competition contested by the senior men's national teams of the members of the Fédération Internationale de Football Association (FIFA), the sport's global governing body. "
         },
         correctAnswer: "d"
+      },
+      {
+        question: "How much wood can a woodchuck chuck?",
+        answers: {
+          a: "One Thousand Woods ",
+          b: "Field studies concluded that a woodchuck does not in fact chuck wood. ",
+          c: "If a woodchuck could chuck wood, it would chuck about four wood. ",
+          d: "Eight(8) "
+        },
+        correctAnswer: "c"
+      },
+      {
+        question: "Finish the sentence: An apple a day ___",
+        answers: {
+          a: "Keeps the doctor away.",
+          b: "Keeps anyone away if you throw it hard enough.",
+          c: "Is not a financially smart decision due to the high rise of apple prices."
+        },
+        correctAnswer: "b"
       }
     ];
     // on submit, show results
