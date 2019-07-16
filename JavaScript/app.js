@@ -68,9 +68,10 @@ window.onload = function() {
         for (letter in currentQuestion.answers) {
           answers.push(
             `<label>
-              <input type="radio" name="question${questionNumber}" value="${letter}">
+              <li><input type="radio" name="question${questionNumber}" value="${letter}">
               ${letter} :
               ${currentQuestion.answers[letter]}
+              </li>
             </label>`
           );
         }
@@ -99,7 +100,7 @@ window.onload = function() {
           // add to the number of correct answers
           numCorrect++;
           // color the answers green
-          answerContainers[questionNumber].style.color = "lightgreen";
+          answerContainers[questionNumber].style.color = "black";
         } else {
           // if answer is wrong or blank
           // color the answers red
