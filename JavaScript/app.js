@@ -68,10 +68,9 @@ window.onload = function() {
         for (letter in currentQuestion.answers) {
           answers.push(
             `<label>
-              <li><input type="radio" name="question${questionNumber}" value="${letter}">
+              <br><input type="radio" name="question${questionNumber}" value="${letter}">
               ${letter} :
               ${currentQuestion.answers[letter]}
-              </li>
             </label>`
           );
         }
